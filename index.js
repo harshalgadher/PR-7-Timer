@@ -29,7 +29,10 @@ function startTimer() {
 
   totalsecond = h * 3600 + m * 60 + s;
 
-  if (totalsecond < 0) return;
+  if (totalsecond <= 0){
+      alert("Enter Time...");  
+    return;
+  }
 
   runningState = true;
   timer = setInterval(() => {
