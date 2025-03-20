@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="./3003126.png">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="timer-container">
+        <h1>Timer</h1>
+        <div class="input-time">
+            <input type="number" class="timer" id="hours">
+            <span>Hours</span>
+            <input type="number" class="timer" id="minutes">
+            <span>Minutes</span>
+            <input type="number" class="timer" id="seconds">
+            <span>Seconds</span>
+        </div>
+        <h2 id="time">00 : 00 : 00</h1>
+        <div class="btn2">
+            <button id="start" class="btn5">Start</button>
+            <button id="reset" class="btn5">Reset</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="timeUpModal" class="modal">
+        <div class="modal-content">
+            <h2>😎😎</h2>
+            <p style="color: black;">Success is not final, failure is not fatal: It is the courage to continue that counts.</p>
+            <button class="close-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <audio src="./kgf_rocky_climax.mp3" id="rokey-alarm"></audio>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>

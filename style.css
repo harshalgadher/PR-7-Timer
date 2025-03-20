@@ -1,0 +1,160 @@
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.timer-container {
+    border: 1px solid #ea5455;
+    text-align: center;
+    padding: 4px 50px 150px;
+    border-radius: 10px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.918);
+    box-shadow: 0 8px 32px 0 #41141462;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.input-time input{
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+.input-time span{
+    font-size: 20px;
+    font-weight: 700;
+}
+h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 50px;
+    font-size: 50px;
+    font-weight:800;
+}
+h2{
+    font-size: 40px;
+}
+
+.timer {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
+    width: 70px;
+    height: 50px;
+    margin: 10px 10px 20px;
+}
+
+.btn2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn2 button {
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    border: 1.7px solid rgba(0, 0, 0, 0.445);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 20% auto;
+}
+
+.close-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* From Uiverse.io by TCdesign-dev */
+.btn5 {
+    align-items: center;
+    background-image:  linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    /* background-color: #089116; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow:  linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.btn5:hover,
+.btn5:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgb(255, 255, 255);
+}
+
+.btn5:hover {
+    transform: translateY(-1px);
+}
+
+.btn5:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
